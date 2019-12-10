@@ -1,18 +1,17 @@
-#include "Movie.h"
-#include <fstream>
-#include <iostream>
-#include <stdlib.h>
-
-class Room
-{
+#pragma once
+#include"Movie.h"
+#include<fstream>
+class Room {
 private:
-    int roomNumber;
-    vector<Movie> movies;
-    void setMovies();
-
+	int  roomNumber;
+	vector<Movie> movies;
+	void setMovies();
 public:
-    Room();
-    int getRoom();
-    void printMovies();
-    Movie chooseMovie(int i);
+	Room();
+	int getRoom();
+	void printMovies();
+	Movie chooseMovie(int i);
+
+
+
 };
